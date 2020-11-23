@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#141518</color>
+    <color name="colorAccent">#4A5FD8</color>
+    <color name="phongtrong">#EE8AB5DD</color>
+    <color name="dathue">#6ABEE4</color>
+    <color name="tien">#F0758D</color>
+    <color name="phong">#EFF8FB</color>
+    <color name="nuthome">#03A9F4</color>
+    <color name="loginregister">#3f51b5</color>
+    <color name="login_register">#E91E63</color>
+    <color name="background">#EFF8FB</color>
+    <color name="tongtien">#DA0E2C</color>
+</resources>

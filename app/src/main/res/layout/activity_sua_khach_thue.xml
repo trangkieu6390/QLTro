@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SuaKhachThueActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="@string/suanguoithue"
+        android:gravity="center"
+        android:textSize="30sp"
+       />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tennt"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtTenNguoiThueSua"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:inputType="textPersonName" />
+
+                    <requestFocus />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gioitinh"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rdoGioiTinhSua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdoNamSua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nam" />
+
+                        <RadioButton
+                            android:id="@+id/rdoNuSua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nu" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ngaysinh"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtNgaySinhSua"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:hint="@string/ngaylhd"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btnChonNgaySinhSua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmnd"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtCMNDSua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sdt"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtSDTNguoiThueSua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|textPhonetic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ngaythue"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtNgayThueSua"
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:hint="@string/ngaylhd"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btnChonNgayThueSua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thuephong"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/spnPhongThueSua"
+                        android:layout_width="150sp"
+                        android:layout_height="40sp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anhdd"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imgAnhDD"
+                        android:layout_width="149sp"
+                        android:layout_height="90sp"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnChupAnhDD"
+                            android:layout_width="60sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/camera" />
+
+                        <Button
+                            android:id="@+id/btnChonAnhDD"
+                            android:layout_width="60sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/file" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmndtruoc"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imgCmndTruoc"
+                        android:layout_width="149sp"
+                        android:layout_height="90sp"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnChupTruoc"
+                            android:layout_width="60sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/camera" />
+
+                        <Button
+                            android:id="@+id/btnChonTruoc"
+                            android:layout_width="60sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/file" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmndsau"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imgCmndSau"
+                        android:layout_width="149sp"
+                        android:layout_height="90sp"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnChupSau"
+                            android:layout_width="60sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/camera" />
+
+                        <Button
+                            android:id="@+id/btnChonSau"
+                            android:layout_width="60sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/file" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSuaNguoiThue"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sua"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

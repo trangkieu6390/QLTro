@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/image_AnhDD"
+        android:layout_width="73dp"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ten"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_tenkhach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ten1"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gioitinh"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_gioitinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nu"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ngaysinh"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_ngaysinh"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/ngaylhd"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cmnd"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_cmnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sdt1"
+                android:textSize="20sp"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sdt"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sdt"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/sdt1"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ngaythue"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_ngaythue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ngaylhd"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                 />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cmndtruoc"
+            android:textSize="20sp"
+            />
+        <LinearLayout
+            android:layout_width="216dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageCmndTruoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cmndsau"
+            android:textSize="20sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/imageCmndSau"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="50sp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnGoiKhach"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/goidi"
+            android:gravity="top" />
+
+        <Button
+            android:id="@+id/btnSuaKhachThue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/exchange"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnXoaKhachThue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="30sp"
+            android:background="@drawable/delete"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <requestFocus />
+</LinearLayout>

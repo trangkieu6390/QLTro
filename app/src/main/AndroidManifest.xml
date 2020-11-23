@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quanlyphongtro">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/house"
+        android:label="Quan Ly Phong Tro"
+        android:roundIcon="@mipmap/house_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CapNhapGiaDienNuocActivity"
+            android:parentActivityName=".DanhSachPhongActivity"></activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChiTietHoaDonActivity"
+            android:label="Chi Tiết Hóa Đơn"
+            android:parentActivityName=".DanhSachHoaDonActivity"></activity>
+        <activity
+            android:name=".LapHoaDonActivity"
+            android:label="Lập Hóa Đơn"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+        <activity
+            android:name=".DanhSachPhong_HoaDonActivity"
+            android:label="Danh Sách Hóa Đơn Từng Phòng"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+        <activity
+            android:name=".HoaDonCuaTungPhongActivity"
+            android:label="Hóa Đơn Từng Phòng"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+        <activity
+            android:name=".DanhSachHoaDonActivity"
+            android:label="Danh Sách Hóa Đơn"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+        <activity
+            android:name=".XemThanhVienActivity"
+            android:label="Danh Sách Thành Viên"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+
+        <activity
+            android:name=".ThemPhongActivity"
+            android:label="Thêm Phòng"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+        <activity
+            android:name=".ThemNguoiThueActivity"
+            android:label="Thêm Người Thuê"
+            android:parentActivityName=".XemThanhVienActivity"/>
+        <activity
+            android:name=".SuaPhongActivity"
+            android:label="Sửa Phòng"
+            android:parentActivityName=".DanhSachPhongActivity"/>
+        <activity
+            android:name=".SuaKhachThueActivity"
+            android:label="Sửa Khách Thuê"
+            android:parentActivityName=".XemThanhVienActivity"/>
+        <activity
+            android:name=".DanhSachPhongActivity"
+            android:label="Danh Sách Phòng" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+
+    </application>
+
+</manifest>
